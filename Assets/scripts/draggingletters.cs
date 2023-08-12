@@ -5,16 +5,12 @@ using UnityEngine;
 public class draggingletters : MonoBehaviour
 {
     // Start is called before the first frame update
-    public letterobject obj;
+  
     Vector2 buffer = Vector2.zero;
     Vector2 tomve = Vector2.zero;
     private float speed=0.02f;
 
-    public void FixedUpdate()
-    {
-        // Debug.Log(obj.numletters);
-
-    }
+   
     private void OnMouseDown()
     {
         buffer = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
