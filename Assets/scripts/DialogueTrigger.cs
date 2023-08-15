@@ -31,6 +31,7 @@ public class DialogueTrigger : MonoBehaviour
         if(collision.CompareTag("sharp"))
         {
             Debug.Log("collision detected");
+            collision.gameObject.SetActive(false);
             FoundTool();
         }
     }

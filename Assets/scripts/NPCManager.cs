@@ -7,9 +7,10 @@ using TMPro;
 public class NPCManager : MonoBehaviour
 {
     //when player interacts with NPC -- collider/raycast -- NPC tells Player the clue
-   /* [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    private int index = 0;
+    
+    /*private int index = 0;
     [SerializeField] private float wordSpeed;
     [SerializeField] private bool playerIsClose;*/
 
@@ -25,19 +26,11 @@ public class NPCManager : MonoBehaviour
         sentence2 = new Queue<string>();
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            DisplaySentence();
-        }
-
-       
-    }
+    
 
     public void StartDialogue(Dialogue d)
     {
-        Debug.Log("Convo with " + d.name);
+        dialoguePanel.SetActive(true);
 
         sentence.Clear();
        
@@ -53,7 +46,8 @@ public class NPCManager : MonoBehaviour
 
     public void FoundObjDialogue(Dialogue d)
     {
-       
+        dialoguePanel.SetActive(true);
+
         sentence2.Clear();
 
         foreach (string s in d.sentences)
@@ -76,9 +70,9 @@ public class NPCManager : MonoBehaviour
         }
 
         string sent = sentence.Dequeue();
-    
 
-        Debug.Log(sent);
+
+        dialogueText.text = sent;
      
     }
 
@@ -93,7 +87,7 @@ public class NPCManager : MonoBehaviour
 
       
         string sent2 = sentence2.Dequeue();
-        Debug.Log(sent2);
+        dialogueText.text = sent2;
     }
 
 

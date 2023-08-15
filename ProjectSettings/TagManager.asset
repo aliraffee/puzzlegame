@@ -6,6 +6,8 @@ TagManager:
   tags:
   - letter
   - sharp
+  - block
+  - crate
   layers:
   - Default
   - TransparentFX
