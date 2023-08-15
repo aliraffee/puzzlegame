@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
-    [SerializeField] private GameObject door2;
+    [SerializeField] private GameObject door;
 
     // Start is called before the first frame update
     void Start()
@@ -14,10 +14,11 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("letter"))
         {
             //remove door1
-            door2.SetActive(false);
+            Debug.Log("pressure plate activated");
+            door.SetActive(false);
         }
     }
 }
