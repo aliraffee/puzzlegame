@@ -46,7 +46,8 @@ public class NPCManager : MonoBehaviour
 
     public void FoundObjDialogue(Dialogue d)
     {
-       
+        dialoguePanel.SetActive(true);
+
         sentence2.Clear();
 
         foreach (string s in d.sentences)
