@@ -9,13 +9,10 @@ public class letterobject : ScriptableObject
     // Start is called before the first frame update
     public string[] letters;//the letters attatched to this 
     public int numletters;//number of letters
-<<<<<<< Updated upstream
     public Sprite image;
-=======
     
    
 
 
 
->>>>>>> Stashed changes
 }
