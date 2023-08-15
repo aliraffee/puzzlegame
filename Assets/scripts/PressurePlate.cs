@@ -5,10 +5,13 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     [SerializeField] private GameObject door;
+    
+    [SerializeField] private Sprite sprite_open;
 
     // Start is called before the first frame update
     void Start()
     {
+        door.SetActive(true);
         
     }
 
@@ -18,7 +21,9 @@ public class PressurePlate : MonoBehaviour
         {
             //remove door1
             Debug.Log("pressure plate activated");
-            door.SetActive(false);
+
+            door.GetComponent<SpriteRenderer>().sprite = sprite_open;
+            door.GetComponent<Collider2D>().enabled = false;
         }
     }
 }
