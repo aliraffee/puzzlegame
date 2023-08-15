@@ -5,15 +5,23 @@ using UnityEngine.UI;
 
 public class rotateLetters : MonoBehaviour
 {
-    [SerializeField] private GameObject triangle;
+    [SerializeField] private GameObject topR;
+    [SerializeField] private GameObject topL;
+    [SerializeField] private GameObject bottomR;
+    [SerializeField] private GameObject bottomL;
 
-    public void AntiClockwise()
+    public void TopRightAntiClockwise()
     {
-        triangle.transform.Rotate(0f, 0f, 20f);
+        topR.transform.Rotate(0f, 0f, 20f);
     }
 
-    public void Clockwise()
+    public void TopRightClockwise()
     {
-        triangle.transform.Rotate(0f, 0f, -20f);
+        topR.transform.Rotate(0f, 0f, -20f);
+    }
+
+    private void Update()
+    {
+        
     }
 }
