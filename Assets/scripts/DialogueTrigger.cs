@@ -7,7 +7,6 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] public Dialogue dialogue;
     public NPCManager manager;
 
-   
 
     public void TriggerDialogue()
     {
