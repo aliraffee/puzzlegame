@@ -9,24 +9,21 @@ public class Sharptool : MonoBehaviour
     void Start()
     {
         collidedObject = null;
+
     }
 
     // Update is called once per frame
     void Update()
     {
  
-        if (collidedObject != null)
-        {
-            Vector3 offset = new Vector3(1, 0, 0); // replace with your desired offset vector
-            this.transform.position = collidedObject.transform.position + offset;
-        }
+      
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.transform.tag == "letter")
         {
-            collidedObject = collision.transform.gameObject;
+            GetComponent<draggingletters>().enabled = true;
         }
     }
 }

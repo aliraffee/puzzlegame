@@ -8,8 +8,14 @@ public class NumberSequence : MonoBehaviour
 {
 
     [SerializeField] public GameObject panel;
+    [SerializeField] public GameObject panel2;
+    [SerializeField] public GameObject panel3;
+
     [SerializeField] public Button[] numbers;
-    private int num;
+    List<int> sequence = new List<int>();
+    List<int> tseq = new List<int> {1,3,6};
+    List<int> fseq = new List<int> {0,1,1,2,5};
+    private int num = 0;
     
  
 
@@ -23,97 +29,89 @@ public class NumberSequence : MonoBehaviour
         }
     }
 
-    public void Check()
+    public void StoreInList(int i)
     {
-        Fibonnacci();
-        Triangle();
-    }
 
+        num = i;
+        sequence.Add(num);
 
-    public bool Fibonnacci()
-    {
         
-        List<int> fseq = new List<int> { 0, 1, 1, 2, 5 };
-        List<int> sequence = new List<int>();
-
-        for (int i = 0; i < 9; i++)
-        {
-            if (numbers[i].enabled == true)
-            {
-                //Debug.Log("num pressed");
-                num = i;
-                sequence.Add(num);
-                
-            }
-
-        }
-
-        Debug.Log(sequence);
-
-        if(sequence.Equals(fseq))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
 
     }
 
-
-    public bool Triangle()
+    public void clear()
     {
-       
-        List<int> tseq = new List<int> { 1,3,6 };
-        List<int> sequence = new List<int>();
-
-        for (int i = 0; i < 9; i++)
-        {
-            if (numbers[i].enabled == true)
-            {
-                num = i;
-                sequence.Add(num);
-                Debug.Log(sequence[i]);
-            }
-
-
-        }
-
-       
-
-        if (sequence.Equals(tseq))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-
+        sequence.Clear();
     }
+
 
 
     public void Display()
     {
-        if(Fibonnacci() == true)
+        bool FisSame = false;
+        bool TisSame = false;
+
+        if(sequence.Count == fseq.Count)
         {
+            for (int j = 0; j < sequence.Count; j++)
+            {
+
+                if (sequence[j] == fseq[j])
+                {
+                    FisSame = true;
+                    TisSame = false;
+                }
+                else
+                {
+                    break;
+                }
+
+            }
+        }
+        
+        if(sequence.Count == tseq.Count)
+        {
+            for (int j = 0; j < sequence.Count; j++)
+            {
+
+                if (sequence[j] == tseq[j])
+                {
+                    TisSame = true;
+                    FisSame = false;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+       
+
+
+        if (FisSame == true)
+        {
+            
             Debug.Log("Yay!");
+            panel.SetActive(false);
+            panel2.SetActive(true);
             //reveal hidden path
         }
-        else if(Fibonnacci() == false)
+        else if(TisSame == true)
+        {
+            Debug.Log("Woohoo");
+            panel.SetActive(false);
+            panel3.SetActive(true);
+            //open path to pressure plate
+        }
+        else
         {
             Debug.Log("shame");
         }
 
-        if(Triangle() == true)
-        {
-            Debug.Log("Woohoo");
-            //open path to pressure plate
-        }
-        else if(Triangle()== false)
-        {
-            Debug.Log("sad");
-        }
+
     }
+
+
+
+
 }
