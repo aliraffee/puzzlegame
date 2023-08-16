@@ -5,16 +5,14 @@ using UnityEngine;
 public class draggingletters : MonoBehaviour
 {
     // Start is called before the first frame update
-    public letterobject obj;
+  
     Vector2 buffer = Vector2.zero;
     Vector2 tomve = Vector2.zero;
+
+    displayletter collidiingtobject, thispnke;
     private float speed=0.02f;
 
-    public void FixedUpdate()
-    {
-        // Debug.Log(obj.numletters);
-
-    }
+   
     private void OnMouseDown()
     {
         buffer = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
@@ -24,8 +22,6 @@ public class draggingletters : MonoBehaviour
         tomve = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - buffer;
         transform.position = Vector2.MoveTowards(transform.position, tomve, speed);
     }
-<<<<<<< Updated upstream
-=======
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag!="letter")
@@ -57,12 +53,7 @@ public class draggingletters : MonoBehaviour
 
            
         }
-
-
-
-
     }
->>>>>>> Stashed changes
 }
 
 

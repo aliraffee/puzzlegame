@@ -16,39 +16,24 @@ public class DialogueTrigger : MonoBehaviour
 
     public void FoundTool()
     {
-
         manager.FoundObjDialogue(dialogue2);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject l = null ;
-        GameObject s = null;
-
-        if (collision.CompareTag("letter") && (!collision.CompareTag("sharp")))
+        if (collision.CompareTag("letter"))
         {
-            l = collision.transform.gameObject;
             Debug.Log("collision detected");
             TriggerDialogue();
-
+          
         }
-        else if(collision.CompareTag("letter") && collision.CompareTag("sharp"))
+
+        if(collision.CompareTag("sharp"))
         {
-            s = collision.transform.gameObject;
-            //l.gameObject.SetActive(false);
-            Debug.Log("sharp tool detected");
-            s.gameObject.SetActive(false);
+            Debug.Log("collision detected");
+            collision.gameObject.SetActive(false);
             FoundTool();
         }
-
-        /*if (collision.CompareTag("sharp"))
-        {
-            
-
-
-        }*/
-
-
     }
 
 }

@@ -48,7 +48,6 @@ public class NPCManager : MonoBehaviour
     {
         dialoguePanel.SetActive(true);
 
-        sentence.Clear();
         sentence2.Clear();
 
         foreach (string s in d.sentences)
@@ -88,7 +87,6 @@ public class NPCManager : MonoBehaviour
 
       
         string sent2 = sentence2.Dequeue();
-    //sentence.Dequeue();
         dialogueText.text = sent2;
     }
 
@@ -96,7 +94,7 @@ public class NPCManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        dialoguePanel.SetActive(false);
+        Debug.Log("End of Convo");
     }
 
 

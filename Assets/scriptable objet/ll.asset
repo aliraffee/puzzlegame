@@ -16,8 +16,4 @@ MonoBehaviour:
   - l
   - l
   numletters: 2
-<<<<<<< Updated upstream:Assets/scriptable objet/ll.asset
-  img: {fileID: 21300000, guid: 6caa1e30c16652f4286710d815d35d38, type: 3}
-=======
-  image: {fileID: 21300000, guid: df8d7ab566138124e8f5226186f1cb21, type: 3}
->>>>>>> Stashed changes:Assets/scripts/scriptable objet/ll.asset
+  image: {fileID: 21300000, guid: 6caa1e30c16652f4286710d815d35d38, type: 3}
