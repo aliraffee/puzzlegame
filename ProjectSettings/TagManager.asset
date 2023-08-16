@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Rubbish
   - Boarder
+  - TriggerPlate
   layers:
   - Default
   - TransparentFX
