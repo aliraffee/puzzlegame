@@ -12,6 +12,7 @@ public class blocks : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragHandl
     
     public void OnBeginDrag(PointerEventData eventData)
     {
+        img = this.GetComponent<Image>();
         buffer = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
 
         parntafterdrag = transform.parent;
