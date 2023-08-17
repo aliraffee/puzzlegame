@@ -158,8 +158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   ball: {fileID: 1692900468}
-  ballin: {fileID: 1831425605}
-  nill: {fileID: 2013721538}
   ed: {fileID: 0}
 --- !u!114 &57449427
 MonoBehaviour:
@@ -1644,8 +1642,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   ball: {fileID: 1692900468}
-  ballin: {fileID: 0}
-  nill: {fileID: 2013721538}
   ed: {fileID: 0}
 --- !u!61 &1147655164
 BoxCollider2D:
@@ -2369,8 +2365,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   ball: {fileID: 1692900468}
-  ballin: {fileID: 1831425605}
-  nill: {fileID: 0}
   ed: {fileID: 0}
 --- !u!114 &1574329923
 MonoBehaviour:
@@ -2539,8 +2533,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   ball: {fileID: 0}
-  ballin: {fileID: 1831425605}
-  nill: {fileID: 0}
   ed: {fileID: 0}
 --- !u!114 &1692900470
 MonoBehaviour:
@@ -2710,8 +2702,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   ball: {fileID: 1692900468}
-  ballin: {fileID: 0}
-  nill: {fileID: 0}
   ed: {fileID: 0}
 --- !u!114 &1831425607
 MonoBehaviour:
@@ -3186,8 +3176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   ball: {fileID: 1692900468}
-  ballin: {fileID: 1831425605}
-  nill: {fileID: 0}
   ed: {fileID: 0}
 --- !u!114 &2013721540
 MonoBehaviour:

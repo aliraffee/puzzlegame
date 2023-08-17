@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,8 @@ public class draggingletters : MonoBehaviour
     public letterobject obj;
     Vector2 buffer = Vector2.zero;
     Vector2 tomve = Vector2.zero;
-    private float speed=0.02f;
-    public GameObject ball,ballin,nill;
+    private float speed = 0.02f;
+    public GameObject ball;
     public GameObject ed;
     public void FixedUpdate()
     {
@@ -32,30 +33,30 @@ public class draggingletters : MonoBehaviour
 
         if (collision.gameObject.name == "ll" && this.gameObject.name == "ba")
         {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
             ball.SetActive(true);
-            ball.transform.position = this.gameObject.transform.position;
-            this.gameObject.SetActive(false);
-            collision.gameObject.SetActive(false);
-           
 
         }
-
-        if (collision.gameObject.name == "ll" && this.gameObject.name == "in")
+        if (collision.gameObject.name == "ni" && this.gameObject.name == "ll")
         {
-            nill.SetActive(true);
-            nill.transform.position = this.gameObject.transform.position;
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
-
+            ball.SetActive(true);
 
         }
-        if((collision.gameObject.name == "ball" && this.gameObject.name == "in")||(collision.gameObject.name == "nill" && this.gameObject.name == "ba"))
+        if (collision.gameObject.name == "ball" && this.gameObject.name == "in")
         {
-            ballin.SetActive(true);
-            ballin.transform.position = this.gameObject.transform.position;
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
+            ball.SetActive(true);
 
+        }
+        if (collision.gameObject.name == "nill" && this.gameObject.name == "ba")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
 
         }
 
