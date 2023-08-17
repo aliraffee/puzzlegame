@@ -28,14 +28,7 @@ public class draggingletters : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.transform.position.y>transform.position.y)
-        {
-            for (int i = 0; i < otherlb.let.Capacity; i++)
-            {
-                lb.let.Add(otherlb.let[i]);
-            }
-        }
-
+      
 
         if (collision.gameObject.name=="ll"&& this.gameObject.name=="ba")
                 {
