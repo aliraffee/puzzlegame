@@ -67,10 +67,12 @@ public class draggingletters : MonoBehaviour
         if (collision.gameObject.name == "empty" && this.gameObject.name == "us")
         {
             ed.SetActive(true);
+            collision.gameObject.SetActive(false);
         }
         if (collision.gameObject.name == "empty" && this.gameObject.name == "confus")
         {
             ed.SetActive(true);
+            collision.gameObject.SetActive(false);
         }
 
         if (collision.gameObject.name == "nf" && this.gameObject.name == "co")
