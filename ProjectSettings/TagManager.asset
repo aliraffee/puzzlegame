@@ -50,3 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 2236892893
+    locked: 0
+  - name: CollidingObjects
+    uniqueID: 2884298723
+    locked: 0
