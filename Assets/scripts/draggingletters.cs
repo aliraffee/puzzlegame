@@ -108,7 +108,36 @@ public class draggingletters : MonoBehaviour
             ball.SetActive(true);
 
         }
-        
+
+        //Level 2
+        if (collision.gameObject.name == "ck" && this.gameObject.name == "ro")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        if (collision.gameObject.name == "in" && this.gameObject.name == "ck")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        //rock become rockin
+        if (collision.gameObject.name == "in" && this.gameObject.name == "Rock")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
     }
 }
 
