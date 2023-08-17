@@ -6,6 +6,8 @@ public class rubbishCollection : MonoBehaviour
 {
     private Vector3 offSet;
     private Camera cam;
+    Vector2 tomve = Vector2.zero;
+    private float speed = 0.02f;
 
     [SerializeField] private int rubbishCount;
     [SerializeField] private GameObject inLetters;
@@ -23,6 +25,7 @@ public class rubbishCollection : MonoBehaviour
     private void OnMouseDrag()
     {
         transform.position = GetMousePos() + offSet;
+        transform.position = Vector2.MoveTowards(transform.position, tomve, speed);
     }
 
     Vector3 GetMousePos()
