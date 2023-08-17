@@ -8,6 +8,7 @@ TagManager:
   - sharp
   - block
   - crate
+  - NPC
   layers:
   - Default
   - TransparentFX

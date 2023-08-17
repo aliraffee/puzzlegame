@@ -9,7 +9,8 @@ public class NPCManager : MonoBehaviour
     //when player interacts with NPC -- collider/raycast -- NPC tells Player the clue
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    
+
+
     /*private int index = 0;
     [SerializeField] private float wordSpeed;
     [SerializeField] private bool playerIsClose;*/
@@ -24,6 +25,7 @@ public class NPCManager : MonoBehaviour
     {
         sentence = new Queue<string>();
         sentence2 = new Queue<string>();
+       
     }
 
     
@@ -31,7 +33,7 @@ public class NPCManager : MonoBehaviour
     public void StartDialogue(Dialogue d)
     {
         dialoguePanel.SetActive(true);
-
+       
         sentence.Clear();
        
 
@@ -40,14 +42,16 @@ public class NPCManager : MonoBehaviour
             sentence.Enqueue(s);
         }
 
-
+        
         DisplaySentence();
     }
 
     public void FoundObjDialogue(Dialogue d)
     {
         dialoguePanel.SetActive(true);
+       
 
+        sentence.Clear();
         sentence2.Clear();
 
         foreach (string s in d.sentences)
@@ -55,7 +59,7 @@ public class NPCManager : MonoBehaviour
             sentence2.Enqueue(s);
         }
 
-
+        
         DisplaySentence2();
     }
 
@@ -63,8 +67,11 @@ public class NPCManager : MonoBehaviour
 
     public void DisplaySentence()
     {
+
         if (sentence.Count == 0)
         {
+            
+
             EndDialogue();
             return;
         }
@@ -73,6 +80,7 @@ public class NPCManager : MonoBehaviour
 
 
         dialogueText.text = sent;
+        
      
     }
 
@@ -80,21 +88,25 @@ public class NPCManager : MonoBehaviour
     {
        
         if (sentence2.Count == 0)
-        {
+        { 
+
             EndDialogue();
+
             return;
         }
 
       
         string sent2 = sentence2.Dequeue();
+       //sentence.Dequeue();
         dialogueText.text = sent2;
+
     }
 
 
 
     public void EndDialogue()
     {
-        Debug.Log("End of Convo");
+        dialoguePanel.SetActive(false);
     }
 
 
