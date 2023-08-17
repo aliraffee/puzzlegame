@@ -103,13 +103,16 @@ public class draggingletters : MonoBehaviour
             ball.SetActive(true);
 
         }
+
+        /*
         if (collision.gameObject.name == "us" && this.gameObject.name == "us")
         {
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
 
-        }
+        }*/
+        
 
         //Level 2
         if (collision.gameObject.name == "ck" && this.gameObject.name == "ro")
