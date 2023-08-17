@@ -7,6 +7,12 @@ TagManager:
   - Rubbish
   - Boarder
   - TriggerPlate
+  - letter
+  - NPC
+  - crate
+  - block
+  - sharp
+  - empty
   layers:
   - Default
   - TransparentFX
