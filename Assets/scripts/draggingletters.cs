@@ -53,6 +53,108 @@ public class draggingletters : MonoBehaviour
 
            
         }
+<<<<<<< Updated upstream
+=======
+
+        if (collision.gameObject.name == "ll" && this.gameObject.name == "in")
+        {
+            nill.SetActive(true);
+            nill.transform.position = this.gameObject.transform.position;
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+
+
+        }
+        if((collision.gameObject.name == "ball" && this.gameObject.name == "in")||(collision.gameObject.name == "nill" && this.gameObject.name == "ba"))
+        {
+            ballin.SetActive(true);
+            ballin.transform.position = this.gameObject.transform.position;
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+
+
+        }
+
+        //lvl3
+
+        //confused
+        if (collision.gameObject.name == "empty" && this.gameObject.name == "us")
+        {
+            ed.SetActive(true);
+        }
+        if (collision.gameObject.name == "empty" && this.gameObject.name == "confus")
+        {
+            ed.SetActive(true);
+        }
+
+        if (collision.gameObject.name == "nf" && this.gameObject.name == "co")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+        if (collision.gameObject.name == "us" && this.gameObject.name == "conf")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+        if (collision.gameObject.name == "ed" && this.gameObject.name == "confus")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        //used
+        if (collision.gameObject.name == "ed" && this.gameObject.name == "us")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+        if (collision.gameObject.name == "us" && this.gameObject.name == "us")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        //Level 2
+        if (collision.gameObject.name == "ck" && this.gameObject.name == "ro")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        if (collision.gameObject.name == "in" && this.gameObject.name == "ck")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        //rock become rockin
+        if (collision.gameObject.name == "in" && this.gameObject.name == "Rock")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+>>>>>>> Stashed changes
     }
 }
 
