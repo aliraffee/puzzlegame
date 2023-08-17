@@ -10,7 +10,7 @@ public class draggingletters : MonoBehaviour
     Vector2 buffer = Vector2.zero;
     Vector2 tomve = Vector2.zero;
     private float speed = 0.02f;
-    public GameObject ball;
+    public GameObject ball,ballin,nill;
     public GameObject ed;
     public void FixedUpdate()
     {
@@ -33,32 +33,33 @@ public class draggingletters : MonoBehaviour
 
         if (collision.gameObject.name == "ll" && this.gameObject.name == "ba")
         {
+            ball.SetActive(true);
+            ball.transform.position = transform.position;
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
-            ball.SetActive(true);
+           
 
         }
-        if (collision.gameObject.name == "ni" && this.gameObject.name == "ll")
+        if (collision.gameObject.name == "in" && this.gameObject.name == "ll")
         {
+            nill.SetActive(true);
+            nill.transform.position = transform.position;
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
-            ball.SetActive(true);
+         
 
         }
-        if (collision.gameObject.name == "ball" && this.gameObject.name == "in")
+        if ((collision.gameObject.name == "ball" && this.gameObject.name == "in")|| (collision.gameObject.name == "nill" && this.gameObject.name == "ba"))
         {
+            ballin.SetActive(true);
+            ballin.transform.position = transform.position;
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
-            ball.SetActive(true);
+           
 
         }
-        if (collision.gameObject.name == "nill" && this.gameObject.name == "ba")
-        {
-            this.gameObject.SetActive(false);
-            collision.gameObject.SetActive(false);
-            ball.SetActive(true);
-
-        }
+       
+      
 
         //lvl3
 
