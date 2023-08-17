@@ -9,7 +9,7 @@ public class rubbishCollection : MonoBehaviour
     Vector2 tomve = Vector2.zero;
     private float speed = 0.02f;
 
-    [SerializeField] private int rubbishCount;
+    [SerializeField] public int rubbishCount;
     [SerializeField] private GameObject inLetters;
 
     private void Awake()
@@ -55,9 +55,9 @@ public class rubbishCollection : MonoBehaviour
 
     private void Update()
     {
-        if (rubbishCount == 5)
+        /*if (rubbishCount == 5)
         {
             inLetters.SetActive(true);
-        }
+        }*/
     }
 }
