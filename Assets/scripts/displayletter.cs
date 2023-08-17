@@ -14,7 +14,7 @@ public class displayletter : MonoBehaviour
     public int numletters;
 
     [SerializeField] public SpriteRenderer spriteRenderer;
-    [SerializeField] private Sprite img;
+   
 
     //get sprite render component
 

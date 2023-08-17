@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Sharptool : MonoBehaviour
 {
-    private GameObject collidedObject;
+   
     // Start is called before the first frame update
     void Start()
     {
-        collidedObject = null;
-
+       
     }
 
     // Update is called once per frame
