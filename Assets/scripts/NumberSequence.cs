@@ -112,6 +112,12 @@ public class NumberSequence : MonoBehaviour
     }
 
 
+    public void MovePosition()
+    {
+        this.transform.position = new Vector3(-4.5f, -1, 0);
+    }
+
+
 
 
 }

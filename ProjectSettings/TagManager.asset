@@ -9,6 +9,7 @@ TagManager:
   - block
   - crate
   - NPC
+  - empty
   layers:
   - Default
   - TransparentFX

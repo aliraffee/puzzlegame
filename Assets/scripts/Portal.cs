@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
+<<<<<<< Updated upstream
     
     [SerializeField] private GameObject Exit;
 
@@ -14,6 +15,11 @@ public class Portal : MonoBehaviour
         
 
     }
+=======
+    // Start is called before the first frame update
+    [SerializeField] private GameObject Exit;
+
+>>>>>>> Stashed changes
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,14 +27,20 @@ public class Portal : MonoBehaviour
         if (other.CompareTag("letter"))
         {
             Debug.Log("portal entered");
+<<<<<<< Updated upstream
             StartCoroutine(Wait());
             other.transform.position = Exit.transform.position;
            
+=======
+            other.transform.position = Exit.transform.position;
+
+>>>>>>> Stashed changes
 
         }
 
     }
 
+<<<<<<< Updated upstream
     public IEnumerator Wait()
     {
 
@@ -37,4 +49,6 @@ public class Portal : MonoBehaviour
 
 
 
+=======
+>>>>>>> Stashed changes
 }
