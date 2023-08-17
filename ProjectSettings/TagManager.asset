@@ -4,12 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - letter
-  - sharp
-  - block
-  - crate
-  - NPC
-  - empty
+  - Rubbish
+  - Boarder
+  - TriggerPlate
   layers:
   - Default
   - TransparentFX
@@ -46,10 +43,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 1290808063
-    locked: 0
-  - name: collidingObjects
-    uniqueID: 1995397233
     locked: 0
