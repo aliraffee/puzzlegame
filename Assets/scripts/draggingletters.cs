@@ -9,8 +9,12 @@ public class draggingletters : MonoBehaviour
     Vector2 buffer = Vector2.zero;
     Vector2 tomve = Vector2.zero;
     private float speed=0.02f;
-    public GameObject ball;
+<<<<<<< Updated upstream
 
+=======
+    public GameObject ball;
+    public GameObject ed;
+>>>>>>> Stashed changes
     public void FixedUpdate()
     {
         // Debug.Log(obj.numletters);
@@ -25,6 +29,8 @@ public class draggingletters : MonoBehaviour
         tomve = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - buffer;
         transform.position = Vector2.MoveTowards(transform.position, tomve, speed);
     }
+<<<<<<< Updated upstream
+=======
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -36,9 +42,60 @@ public class draggingletters : MonoBehaviour
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
 
+        }
+
+        //lvl3
+
+        //confused
+        if(collision.gameObject.name == "empty" && this.gameObject.name == "us")
+        {
+            ed.SetActive(true);
+        }
+        if (collision.gameObject.name == "empty" && this.gameObject.name == "confus")
+        {
+            ed.SetActive(true);
+        }
+
+        if (collision.gameObject.name == "nf" && this.gameObject.name == "co")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
 
         }
+        if (collision.gameObject.name == "us" && this.gameObject.name == "conf")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+        if (collision.gameObject.name == "ed" && this.gameObject.name == "confus")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+
+        //used
+        if (collision.gameObject.name == "ed" && this.gameObject.name == "us")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+        if (collision.gameObject.name == "us" && this.gameObject.name == "us")
+        {
+            this.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+
+        }
+        
     }
+>>>>>>> Stashed changes
 }
 
 
