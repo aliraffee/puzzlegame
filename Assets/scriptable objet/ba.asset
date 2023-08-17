@@ -16,4 +16,4 @@ MonoBehaviour:
   - b
   - a
   numletters: 2
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 91a6607cfc142e2438955fc16f536c27, type: 3}

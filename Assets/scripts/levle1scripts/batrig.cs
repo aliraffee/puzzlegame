@@ -14,10 +14,10 @@ public class batrig : MonoBehaviour
             celldoor.SetActive(false);
         }
         Debug.Log(collision.transform.rotation.z);
-       /* if( collision.gameObject.transform.childCount != 0 )
+        if( collision.gameObject.transform.childCount != 0 )
         {
             celldoor.SetActive(false);
-        }*/
+        }
         
     }
 }

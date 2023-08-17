@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 633c08cdb64eb35449f7125664aa15f9, type: 3}
-  m_Name: ll
+  m_Name: in
   m_EditorClassIdentifier: 
   letters:
-  - l
-  - l
+  - i
+  - n
   numletters: 2
-  image: {fileID: 21300000, guid: df8d7ab566138124e8f5226186f1cb21, type: 3}
+  image: {fileID: 21300000, guid: 233f695ee21f1b94d8ca3b25d8ec5faf, type: 3}

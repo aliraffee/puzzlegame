@@ -24,11 +24,11 @@ public class displayletter : MonoBehaviour
 
         spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
 
-        for (int i = 0; i <lb.numletters; i++)
+       /* for (int i = 0; i <lb.numletters; i++)
         {
          letters[i]= lb.letters[i];
 
-        }
+        }*/
 
         numletters = lb.numletters;
 
