@@ -399,6 +399,10 @@ MonoBehaviour:
   ballin: {fileID: 0}
   nill: {fileID: 975531689}
   ed: {fileID: 0}
+  rotateLett: {fileID: 0}
+  rubbishCollec: {fileID: 0}
+  OceanTrig: {fileID: 0}
+  NextLevel: {fileID: 0}
 --- !u!4 &80077800
 Transform:
   m_ObjectHideFlags: 0
@@ -1858,6 +1862,10 @@ MonoBehaviour:
   ballin: {fileID: 0}
   nill: {fileID: 975531689}
   ed: {fileID: 0}
+  rotateLett: {fileID: 0}
+  rubbishCollec: {fileID: 0}
+  OceanTrig: {fileID: 0}
+  NextLevel: {fileID: 0}
 --- !u!4 &1505193683
 Transform:
   m_ObjectHideFlags: 0
@@ -2295,7 +2303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3547139265539452802, guid: b028655feb38dcb499db366f263285c8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Level_1
+      value: Level_2
       objectReference: {fileID: 0}
     - target: {fileID: 3547139265539452802, guid: b028655feb38dcb499db366f263285c8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2595,6 +2603,10 @@ MonoBehaviour:
   ballin: {fileID: 0}
   nill: {fileID: 975531689}
   ed: {fileID: 0}
+  rotateLett: {fileID: 0}
+  rubbishCollec: {fileID: 0}
+  OceanTrig: {fileID: 0}
+  NextLevel: {fileID: 0}
 --- !u!4 &1871646863
 Transform:
   m_ObjectHideFlags: 0
