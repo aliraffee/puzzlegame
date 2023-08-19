@@ -17,6 +17,7 @@ public class NumberSequence : MonoBehaviour
     [SerializeField] public Button[] numbers;
     List<string> sequence1 = new List<string>();
     List<string> sequence2 = new List<string>();
+
     List<string> word1 = new List<string> { "a", "m", "a", "z", "i", "n", "g" };
     List<string> word2 = new List<string> { "e", "n", "d", "i", "n", "g" };
     private string ch = "";
@@ -31,6 +32,11 @@ public class NumberSequence : MonoBehaviour
             panel.SetActive(true);
             sequence1.Clear();
             sequence2.Clear();
+
+            for (int j = 0; j < textLetters.Length; j++)
+            {
+                textLetters[j].text = null;
+            }
 
         }
     }
@@ -57,17 +63,18 @@ public class NumberSequence : MonoBehaviour
         switch (i[0])
         {
             case 'a':
-
                 if (textLetters[1].text == null)
                 {
                     textLetters[1].text = ch;
                     Debug.Log("!null");
                 }
                 break;
+
             case 'm':
                 textLetters[0].text = ch;
                 Debug.Log("!null");
                 break;
+
             case 'i':
                 if (textLetters[2].text == null)
                 {
