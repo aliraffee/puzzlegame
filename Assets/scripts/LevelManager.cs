@@ -10,19 +10,29 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void Level_1()
+    public void TutLevel_1()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void Level_2()
+    public void TutLevel_2()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void Level_3()
+    public void Level_1()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void Level_2()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void Level_3()
+    {
+        SceneManager.LoadScene(5);
     }
 
     public void Level_4()
