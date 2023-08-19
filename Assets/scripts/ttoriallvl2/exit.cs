@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class exit : MonoBehaviour
 {
+    public GameObject pnl;
     // Start is called before the first frame update
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("exit");
+        pnl.SetActive(true);
+
     }
 }

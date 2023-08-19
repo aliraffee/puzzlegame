@@ -9,7 +9,7 @@ public class exitfee : MonoBehaviour
     public displayletter dsp;
     public string[] ball, ballin, nill;
     public TextMeshProUGUI chat;
-
+    public GameObject exit;
 
 
 
@@ -39,7 +39,7 @@ public class exitfee : MonoBehaviour
 
         if (collision.gameObject.name == "nill" || collision.gameObject.name == "ballin")
         {
-            Debug.Log("next level");
+            exit.SetActive(true);
         }
 
 
