@@ -10,12 +10,14 @@ public class NumberSequence : MonoBehaviour
     [SerializeField] public GameObject panel;
     [SerializeField] public GameObject panel2;
     [SerializeField] public GameObject panel3;
+    [SerializeField] public TextMeshProUGUI[] textLetters;
+
 
     [SerializeField] public Button[] numbers;
-    List<char> sequence = new List<char>();
-    List<char> word1 = new List<char> {'a','m','a', 'z', 'i', 'n', 'g'};
-    List<char> word2 = new List<char> {'e', 'n', 'd', 'i', 'n', 'g'};
-    private char ch = '0';
+    List<string> sequence = new List<string>();
+    List<string> word1 = new List<string> {"a","m","a","z", "i", "n", "g"};
+    List<string> word2 = new List<string> {"e", "n", "d", "i", "n", "g"};
+    private string ch = "";
     
  
 
@@ -29,22 +31,35 @@ public class NumberSequence : MonoBehaviour
         }
     }
 
-    public void StoreInList(char i)
+    public void StoreInList(string i)
     {
 
         ch = i;
         sequence.Add(ch);
 
-        
+        for(int k = 0; k < textLetters.Length; k++)
+        {
+            if(textLetters[k].text == null)
+            {
+
+                textLetters[k].text = ch;
+                Debug.Log(textLetters[k].text);
+            }
+            
+        }
+       
 
     }
 
     public void clear()
     {
         sequence.Clear();
+        for(int j = 0; j<textLetters.Length; j++)
+        {
+              textLetters[j].text = null;
+        }
+       
     }
-
-
 
     public void Display()
     {
@@ -58,6 +73,7 @@ public class NumberSequence : MonoBehaviour
 
                 if (sequence[j] == word1[j])
                 {
+                    //textLetters.text = sequence[j];
                     FisSame = true;
                     TisSame = false;
                 }
