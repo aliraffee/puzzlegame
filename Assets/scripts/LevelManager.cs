@@ -35,10 +35,10 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
-    public void Level_4()
+    /*public void Level_4()
     {
         SceneManager.LoadScene(4);
-    }
+    }*/
 
     public void QuitGame()
     {

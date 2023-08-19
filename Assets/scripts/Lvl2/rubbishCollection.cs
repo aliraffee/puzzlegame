@@ -55,9 +55,9 @@ public class rubbishCollection : MonoBehaviour
 
     private void Update()
     {
-        /*if (rubbishCount == 5)
+        if (rubbishCount == 5)
         {
             inLetters.SetActive(true);
-        }*/
+        }
     }
 }

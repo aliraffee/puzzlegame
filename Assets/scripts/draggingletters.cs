@@ -12,6 +12,13 @@ public class draggingletters : MonoBehaviour
     private float speed = 0.02f;
     public GameObject ball,ballin,nill;
     public GameObject ed;
+
+    [SerializeField] GameObject rotateLett;
+    [SerializeField] GameObject rubbishCollec;
+    [SerializeField] GameObject OceanTrig;
+
+    [SerializeField] GameObject NextLevel;
+
     public void FixedUpdate()
     {
         // Debug.Log(obj.numletters);
@@ -123,7 +130,8 @@ public class draggingletters : MonoBehaviour
             //Destroy(this.gameObject);
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
-
+            rotateLett.SetActive(false);
+            OceanTrig.SetActive(false);
         }
 
         if (collision.gameObject.name == "in" && this.gameObject.name == "ck")
@@ -132,7 +140,7 @@ public class draggingletters : MonoBehaviour
             //Destroy(this.gameObject);
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
-
+            rubbishCollec.SetActive(false);
         }
 
         //rock become rockin
@@ -142,9 +150,10 @@ public class draggingletters : MonoBehaviour
             //Destroy(this.gameObject);
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
-
+            NextLevel.SetActive(true);
         }
-        //rock become rockin
+
+        //Tutorial level 2
         if (collision.gameObject.name == "st" && this.gameObject.name == "op")
         {
             this.gameObject.SetActive(false);
