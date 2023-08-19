@@ -7,7 +7,11 @@ public class FinishedTrigger : MonoBehaviour
     [SerializeField] private GameObject end;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == "confused" || collision.gameObject.name == "used")
+        if(collision.gameObject.name == "confused" )
+        {
+            end.SetActive(true);
+        }
+        if(collision.gameObject.name == "used")
         {
             end.SetActive(true);
         }

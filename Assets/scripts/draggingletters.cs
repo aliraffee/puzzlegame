@@ -21,7 +21,7 @@ public class draggingletters : MonoBehaviour
 
 
     [SerializeField] GameObject confused;
-
+    [SerializeField] GameObject finishedTrigger;
 
     public void FixedUpdate()
     {
@@ -104,6 +104,7 @@ public class draggingletters : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
+            finishedTrigger.SetActive(true);
             ball.SetActive(true);
 
         }
@@ -123,6 +124,7 @@ public class draggingletters : MonoBehaviour
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
             confused.SetActive(true);
+            finishedTrigger.SetActive(true);
 
         }
         
