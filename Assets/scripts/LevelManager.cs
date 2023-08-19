@@ -22,12 +22,12 @@ public class LevelManager : MonoBehaviour
 
     public void Level_1()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     public void Level_2()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     public void Level_3()

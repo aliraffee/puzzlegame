@@ -13,6 +13,9 @@ public class Tutorial_1 : MonoBehaviour
 
     public GameObject NextScenePanel;
 
+    [SerializeField] GameObject ri;
+    [SerializeField] GameObject al;
+
     [SerializeField] TMP_Text StartingTxt;
     [SerializeField] TMP_Text DragTuandToTxt;
     [SerializeField] GameObject DragTuandToTxtGO;
@@ -59,6 +62,8 @@ public class Tutorial_1 : MonoBehaviour
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
+            ri.SetActive(true);
+            al.SetActive(true);
         }
 
         //rial
