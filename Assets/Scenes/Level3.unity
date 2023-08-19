@@ -7595,14 +7595,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 56.54892}
   m_LocalScale: {x: 2.3429687, y: 0.61198103, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1540411076}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.48, y: -2.04}
+  m_AnchoredPosition: {x: 5.84, y: -1.01}
   m_SizeDelta: {x: 1.0382, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &1035742184
@@ -7669,7 +7668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1049446080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11322,16 +11321,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540411075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0028775644, y: 0.0110167535, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10638.545}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1035742183}
-  m_RootOrder: 0
+  m_Father: {fileID: 1746327265}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.05051422, y: -0.13977051}
+  m_AnchoredPosition: {x: 836, y: -197}
   m_SizeDelta: {x: 421.3, y: 112.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540411077
@@ -11356,8 +11355,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: finished
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12344,6 +12343,7 @@ RectTransform:
   - {fileID: 1451179796}
   - {fileID: 1049446080}
   - {fileID: 879279385}
+  - {fileID: 1540411076}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
