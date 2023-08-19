@@ -144,6 +144,19 @@ public class draggingletters : MonoBehaviour
             ball.SetActive(true);
 
         }
+        //rock become rockin
+        if (collision.gameObject.name == "st" && this.gameObject.name == "op")
+        {
+            this.gameObject.SetActive(false);
+            //Destroy(this.gameObject);
+             Debug.Log("yes");
+            collision.gameObject.SetActive(false);
+            ball.SetActive(true);
+            //ballin.transform.position = transform.position;
+           
+            nill.SetActive(false);
+
+        }
 
     }
 }
