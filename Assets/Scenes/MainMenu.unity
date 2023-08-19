@@ -784,7 +784,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 193925089}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: Level_1
+        m_MethodName: TutLevel_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
