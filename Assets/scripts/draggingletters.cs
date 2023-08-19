@@ -19,6 +19,10 @@ public class draggingletters : MonoBehaviour
 
     [SerializeField] GameObject NextLevel;
 
+
+    [SerializeField] GameObject confused;
+
+
     public void FixedUpdate()
     {
         // Debug.Log(obj.numletters);
@@ -113,14 +117,14 @@ public class draggingletters : MonoBehaviour
 
         }
 
-        /*
-        if (collision.gameObject.name == "us" && this.gameObject.name == "us")
+        
+        if (collision.gameObject.name == "conf" && this.gameObject.name == "used")
         {
             this.gameObject.SetActive(false);
             collision.gameObject.SetActive(false);
-            ball.SetActive(true);
+            confused.SetActive(true);
 
-        }*/
+        }
         
 
         //Level 2

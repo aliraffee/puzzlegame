@@ -44,10 +44,12 @@ public class NumberSequence : MonoBehaviour
         {
             sequence1.Add(ch);
         }
-        else if(btn2.enabled == true)
+
+
+        if(btn2.enabled == true)
         {
             sequence2.Add(ch);
-            Debug.Log(ch);
+           
         }
         
        
@@ -59,19 +61,23 @@ public class NumberSequence : MonoBehaviour
                 if (textLetters[1].text == null)
                 {
                     textLetters[1].text = ch;
+                    Debug.Log("!null");
                 }
                 break;
             case 'm':
                 textLetters[0].text = ch;
+                Debug.Log("!null");
                 break;
             case 'i':
                 if (textLetters[2].text == null)
                 {
                     textLetters[2].text = ch;
+                    Debug.Log("!null");
                 }
                else if (textLetters[5].text == null)
                 {
                     textLetters[5].text = ch;
+                    Debug.Log("!null");
                 }
                 break;
 
@@ -79,6 +85,7 @@ public class NumberSequence : MonoBehaviour
                 if (textLetters[4].text == null)
                 {
                     textLetters[4].text = ch;
+                    Debug.Log("!null");
                 }
 
                 break;
@@ -86,10 +93,12 @@ public class NumberSequence : MonoBehaviour
                 if (textLetters[3].text == null)
                 {
                     textLetters[3].text = ch;
+                    Debug.Log("!null");
                 }
                 else if (textLetters[6].text == null)
                 {
                     textLetters[6].text = ch;
+                    Debug.Log("!null");
                 }
                 break;
 
@@ -164,22 +173,22 @@ public class NumberSequence : MonoBehaviour
             {
                 //textLetters.text = sequence[j];
                 TisSame = true;
-            }
-            if (sequence2.Contains("i"))
-            {
-                //textLetters.text = sequence[j];
-             
-                TisSame = true;
-            }
-            if (sequence2.Contains("n"))
-            {
-                //textLetters.text = sequence[j];
-                
-                TisSame = true;
-                FisSame = false;
-            }
+                if (sequence2.Contains("i"))
+                {
+                    //textLetters.text = sequence[j];
 
+                    TisSame = true;
+                    if (sequence2.Contains("n"))
+                    {
+                        //textLetters.text = sequence[j];
 
+                        TisSame = true;
+                        FisSame = false;
+                    }
+                }
+            }
+           
+           
             else
             {
                 TisSame = false;
@@ -187,9 +196,9 @@ public class NumberSequence : MonoBehaviour
 
             }
 
-           
-
         }
+
+
 
         if (FisSame == true)
         {
