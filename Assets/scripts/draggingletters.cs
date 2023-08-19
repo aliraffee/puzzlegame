@@ -152,7 +152,8 @@ public class draggingletters : MonoBehaviour
              Debug.Log("yes");
             collision.gameObject.SetActive(false);
             ball.SetActive(true);
-            ballin.SetActive(true);
+            //ballin.transform.position = transform.position;
+           
             nill.SetActive(false);
 
         }
