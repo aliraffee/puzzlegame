@@ -37,55 +37,6 @@ public class NumberSequence : MonoBehaviour
         ch = i;
         sequence.Add(ch);
 
-        switch(i[1])
-        {
-            case 'a':
-
-               if(textLetters[1].text != null)
-                {
-                    textLetters[1].text = ch;
-                }
-                break;
-            case 'm': 
-                textLetters[0].text = ch;
-                break;
-            case 'i':
-                if(textLetters[2].text == null)
-                {
-                    textLetters[2].text = ch;
-                }
-                if(textLetters[5].text == null)
-                {
-                    textLetters[5].text = ch;
-                }
-                break;
-
-
-
-            case 'e':
-                if (textLetters[4].text == null)
-                {
-                    textLetters[4].text = ch;
-                }
-              
-                break;
-            case 'n':
-                if (textLetters[3].text == null)
-                {
-                    textLetters[3].text = ch;
-                }
-                if (textLetters[6].text == null)
-                {
-                    textLetters[6].text = ch;
-                }
-                break;
-          
-
-
-
-        }
-
-        /*
         for(int k = 0; k < textLetters.Length; k++)
         {
             if(textLetters[k].text == null)
@@ -95,7 +46,7 @@ public class NumberSequence : MonoBehaviour
                 Debug.Log(textLetters[k].text);
             }
             
-        }*/
+        }
        
 
     }
