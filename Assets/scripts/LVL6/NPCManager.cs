@@ -102,8 +102,6 @@ public class NPCManager : MonoBehaviour
 
     }
 
-
-
     public void EndDialogue()
     {
         dialoguePanel.SetActive(false);

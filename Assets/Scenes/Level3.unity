@@ -3007,7 +3007,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.4114761, y: 0.8106344}
+  m_Offset: {x: 3.3414755, y: 0.8106344}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3018,7 +3018,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.816124, y: 6.1851373}
+  m_Size: {x: 6.65613, y: 6.1851373}
   m_EdgeRadius: 0
 --- !u!114 &230051384
 MonoBehaviour:
@@ -3061,6 +3061,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 1540411075}
 --- !u!1 &328004855
 GameObject:
   m_ObjectHideFlags: 0
@@ -3235,8 +3236,8 @@ MonoBehaviour:
     sentences:
     - 'Hello Stranger! Would you like a clue? '
     - Well...unfortunately for you I do not give things out freely...
-    - 'This is what you should do, I need to sharpen my tools. '
-    - So Please find me the tool sharpener.
+    - This is what you should do, I lost my tool
+    - So Please find me the sharp tool :(
   dialogue2:
     name: Gupie
     sentences:
@@ -5362,6 +5363,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 1035742178}
+  finishedTriggertext: {fileID: 0}
 --- !u!1 &763790328
 GameObject:
   m_ObjectHideFlags: 0
@@ -5672,7 +5674,8 @@ MonoBehaviour:
   OceanTrig: {fileID: 0}
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
-  finishedTrigger: {fileID: 0}
+  finishedTrigger: {fileID: 1035742178}
+  finishedTriggertext: {fileID: 1540411075}
 --- !u!1 &786898371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6310,7 +6313,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.932129, y: -0.23066688}
+  m_Offset: {x: 1.0850472, y: -0.23066688}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6321,7 +6324,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.857426, y: 6.1851373}
+  m_Size: {x: 7.1032677, y: 6.1851373}
   m_EdgeRadius: 0
 --- !u!114 &857584267
 MonoBehaviour:
@@ -6363,7 +6366,8 @@ MonoBehaviour:
   OceanTrig: {fileID: 0}
   NextLevel: {fileID: 0}
   confused: {fileID: 230051379}
-  finishedTrigger: {fileID: 1035742178}
+  finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 0}
 --- !u!1001 &869022347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6732,6 +6736,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 0}
 --- !u!1 &950939851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6986,6 +6991,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 0}
 --- !u!61 &986209939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7668,7 +7674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1049446080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9219,6 +9225,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 0}
 --- !u!50 &1242751406
 Rigidbody2D:
   serializedVersion: 4
@@ -9647,6 +9654,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 0}
 --- !u!1 &1316274089
 GameObject:
   m_ObjectHideFlags: 0
@@ -11312,7 +11320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1540411076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15149,6 +15157,7 @@ MonoBehaviour:
   NextLevel: {fileID: 0}
   confused: {fileID: 0}
   finishedTrigger: {fileID: 0}
+  finishedTriggertext: {fileID: 0}
 --- !u!1 &1944456288
 GameObject:
   m_ObjectHideFlags: 0
