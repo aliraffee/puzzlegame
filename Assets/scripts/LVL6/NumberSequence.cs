@@ -12,10 +12,10 @@ public class NumberSequence : MonoBehaviour
     [SerializeField] public GameObject panel3;
 
     [SerializeField] public Button[] numbers;
-    List<int> sequence = new List<int>();
-    List<int> tseq = new List<int> {1,3,6};
-    List<int> fseq = new List<int> {0,1,1,2,5};
-    private int num = 0;
+    List<char> sequence = new List<char>();
+    List<char> word1 = new List<char> {'a','m','a', 'z', 'i', 'n', 'g'};
+    List<char> word2 = new List<char> {'e', 'n', 'd', 'i', 'n', 'g'};
+    private char ch = '0';
     
  
 
@@ -29,11 +29,11 @@ public class NumberSequence : MonoBehaviour
         }
     }
 
-    public void StoreInList(int i)
+    public void StoreInList(char i)
     {
 
-        num = i;
-        sequence.Add(num);
+        ch = i;
+        sequence.Add(ch);
 
         
 
@@ -51,12 +51,12 @@ public class NumberSequence : MonoBehaviour
         bool FisSame = false;
         bool TisSame = false;
 
-        if(sequence.Count == fseq.Count)
+        if(sequence.Count == word1.Count)
         {
             for (int j = 0; j < sequence.Count; j++)
             {
 
-                if (sequence[j] == fseq[j])
+                if (sequence[j] == word1[j])
                 {
                     FisSame = true;
                     TisSame = false;
@@ -69,12 +69,12 @@ public class NumberSequence : MonoBehaviour
             }
         }
         
-        if(sequence.Count == tseq.Count)
+        if(sequence.Count == word2.Count)
         {
             for (int j = 0; j < sequence.Count; j++)
             {
 
-                if (sequence[j] == tseq[j])
+                if (sequence[j] == word2[j])
                 {
                     TisSame = true;
                     FisSame = false;
